@@ -1,0 +1,10 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+
+# An vehicle controller, which consult, save or remove a vehicle of the parking
+POST    /ingresar/vehiculo                     parqueadero.aplicacion.controladores.comando.ComandoVehiculo.ingresarVehiculo
+POST    /retirar/vehiculo                      parqueadero.aplicacion.controladores.comando.ComandoVehiculo.retirarVehiculo
+GET     /consultas/vehiculo/:placa             parqueadero.aplicacion.controladores.consulta.ConsultaVehiculo.consultarVehiculo(placa: String)
+GET     /consultas/listavehiculos              parqueadero.aplicacion.controladores.consulta.ConsultaVehiculo.consultarListaVehiculosEnParqueadero

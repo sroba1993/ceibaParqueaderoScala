@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0mD:\ProyectosScala\Retos\ParqueaderoCeiba\app\parqueadero\aplicacion\controladores\consulta\ConsultaVehiculo.scala:18:14: constructor cannot be instantiated to expected type;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : parqueadero.dominio.modelos.Vehiculo[0m
+[0m[[0m[31merror[0m] [0m[0m required: Option[parqueadero.dominio.modelos.Vehiculo][0m
+[0m[[0m[31merror[0m] [0m[0m        case Vehiculo() => Ok(Json.toJson(vehiculo).toString())[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
