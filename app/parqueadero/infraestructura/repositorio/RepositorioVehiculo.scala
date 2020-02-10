@@ -15,9 +15,9 @@ class RepositorioVehiculo @Inject()(protected val dbConfigProvider: DatabaseConf
 
   def insertarVehiculo(vehiculo: Vehiculo): Future[Int] = db.run(vehiculos += vehiculo)
 
-  def eliminarVehiculo(placa: String): Future[Int] = {
-    val queryDelete = vehiculos.filter(vehiculo => vehiculo.placa === placa).delete
-    db.run(queryDelete)
+  def actualizarVehiculo(vehiculo: Vehiculo): Future[Int] = {
+    val queryUpdate = vehiculos.filter(vh => vh.placa === vehiculo.placa).update(vehiculo)
+    db.run(queryUpdate)
   }
 
   def buscarVehiculo(placa: String): Future[Option[Vehiculo]] = {
@@ -31,12 +31,12 @@ class RepositorioVehiculo @Inject()(protected val dbConfigProvider: DatabaseConf
 
   class TablaVehiculos(tag: Tag) extends Table[Vehiculo](tag, "VEHICULO") {
 
-    def id = column[Int]("ID", O.PrimaryKey)
+    def id = column[Option[Int]]("ID", O.PrimaryKey)
     def placa = column[String]("PLACA")
     def tipoVehiculo = column[String]("TIPO_VEHICULO")
-    def fechaEntrada = column[Date]("FECHA_ENTRADA")
-    def fechaSalida = column[Date]("FECHA_SALIDA")
-    def costo = column[Int]("COSTO")
+    def fechaEntrada = column[Option[Date]]("FECHA_ENTRADA")
+    def fechaSalida = column[Option[Date]]("FECHA_SALIDA")
+    def costo = column[Option[Int]]("COSTO")
 
     def * = (id, placa, tipoVehiculo, fechaEntrada, fechaSalida,costo) <> ((Vehiculo.apply _).tupled, Vehiculo.unapply)
   }

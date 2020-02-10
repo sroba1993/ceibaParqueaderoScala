@@ -3,7 +3,7 @@
 # --- !Ups
 
 CREATE TABLE VEHICULO (
-    ID Integer NOT NULL,
+    ID Integer NOT NULL auto_increment,
     PLACA varchar(6) NOT NULL,
     TIPO_VEHICULO varchar(10) NOT NULL,
     FECHA_ENTRADA DATE,

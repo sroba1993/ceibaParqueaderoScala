@@ -5,12 +5,12 @@ import java.sql.Date
 import play.api.libs.json.Json
 
 case class Vehiculo (
-                      id: Int,
+                      id: Option[Int],
                       placa: String,
                       tipoVehiculo: String,
-                      fechaEntrada: Date,
-                      fechaSalida: Date,
-                      costo: Int
+                      fechaEntrada: Option[Date],
+                      fechaSalida: Option[Date],
+                      costo: Option[Int]
 )
 
 object Vehiculo {

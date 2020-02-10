@@ -12,11 +12,18 @@ import scala.concurrent.{ExecutionContext, Promise}
 class ComandoVehiculo @Inject()(cc: ControllerComponents, repositorioVehiculo: RepositorioVehiculo)(implicit exec: ExecutionContext) extends AbstractController(cc){
 
   def ingresarVehiculo: Action[Vehiculo] = Action.async(parse.json[Vehiculo])  {
-    request => ServicioVehiculo.almacenarVehiculo(request.body).run(repositorioVehiculo).map(r => Ok(r.toString))
+    request => ServicioVehiculo.almacenarVehiculo(request.body).run(repositorioVehiculo).map(r =>
+      r match {
+        case Right(resultado) =>  Ok(resultado.toString)
+        case Left(error) => Ok(error.toString)
+      })
   }
 
-  def retirarVehiculo = Action.async {
-    val promise: Promise[String] = Promise[String]()
-    promise.success("bien").future.map(msg => Ok(msg))
+  def retirarVehiculo = Action.async(parse.json[Vehiculo]) {
+    request => ServicioVehiculo.actualizarVehiculo(request.body).run(repositorioVehiculo).map(r =>
+    r match {
+      case Right(resultado) => Ok(resultado)
+      case Left(error) => Ok(error)
+    })
   }
 }
