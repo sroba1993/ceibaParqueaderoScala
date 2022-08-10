@@ -6,7 +6,7 @@ import parqueadero.infraestructura.repositorio.RepositorioVehiculo
 
 import scala.concurrent.{ExecutionContext, Future}
 
-trait ServicioVehiculo {
+trait ServicioParqueadero {
 
   def almacenarVehiculo(vehiculo: Vehiculo)(implicit ec: ExecutionContext): Reader[RepositorioVehiculo, Future[Either[String, String]]] = Reader {
     repositorioVehiculo: RepositorioVehiculo => repositorioVehiculo.insertarVehiculo(vehiculo).map(s => Right("Se ingresó el vehículo correctamente"))
@@ -31,4 +31,4 @@ trait ServicioVehiculo {
   }
 }
 
-object ServicioVehiculo extends ServicioVehiculo
+object ServicioParqueadero extends ServicioParqueadero

@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="211f3c32-b655-423c-bd99-09eb3e49ec81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/parqueadero/aplicacion/controladores/comando/ComandoVehiculo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/app/parqueadero/aplicacion/controladores/comando/ComandoVehiculo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/parqueadero/aplicacion/controladores/consulta/ConsultaVehiculo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/app/parqueadero/aplicacion/controladores/consulta/ConsultaVehiculo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/parqueadero/aplicacion/servicios/ServicioVehiculo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/app/parqueadero/aplicacion/servicios/ServicioVehiculo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/parqueadero/dominio/modelos/Vehiculo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/app/parqueadero/dominio/modelos/Vehiculo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/parqueadero/infraestructura/repositorio/RepositorioVehiculo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/app/parqueadero/infraestructura/repositorio/RepositorioVehiculo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/evolutions/default/1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/conf/evolutions/default/1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/evolutions/default/1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/evolutions/default/1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/parqueadero/aplicacion/controladores/comando/ComandoVehiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/parqueadero/aplicacion/controladores/comando/ComandoVehiculo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/parqueadero/aplicacion/servicios/ServicioVehiculo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/parqueadero/aplicacion/servicios/ServicioVehiculo$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/parqueadero/aplicacion/servicios/ServicioVehiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/parqueadero/aplicacion/servicios/ServicioVehiculo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/parqueadero/dominio/modelos/Vehiculo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/parqueadero/dominio/modelos/Vehiculo$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/parqueadero/dominio/modelos/Vehiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/parqueadero/dominio/modelos/Vehiculo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/parqueadero/infraestructura/repositorio/RepositorioVehiculo$TablaVehiculos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/parqueadero/infraestructura/repositorio/RepositorioVehiculo$TablaVehiculos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/parqueadero/infraestructura/repositorio/RepositorioVehiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/parqueadero/infraestructura/repositorio/RepositorioVehiculo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/_global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/_global/streams/copy-resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/parqueadero/aplicacion/controladores/comando/ComandoVehiculo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/app/parqueadero/aplicacion/controladores/comando/ComandoParqueadero.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/parqueadero/aplicacion/controladores/consulta/ConsultaVehiculo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/app/parqueadero/aplicacion/controladores/consulta/ConsultaParqueadero.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/parqueadero/aplicacion/servicios/ServicioVehiculo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/app/parqueadero/aplicacion/servicios/ServicioParqueadero.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +167,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/app/parqueadero/aplicacion/servicios/ServicioVehiculo.scala</url>
+          <url>file://$PROJECT_DIR$/app/parqueadero/aplicacion/servicios/ServicioParqueadero.scala</url>
           <line>29</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
